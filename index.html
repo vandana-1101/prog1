@@ -6,7 +6,7 @@
 <button onclick="download()">Download</button>
 <script>
 function download() {
-let text = "Hello!\nThis is my text file.\nWelcome to GitHub!";
+let text = "Hello!\nThis is my text file.\nWelcome to GitHub!\n thank you";
 let file = new Blob([text], {type:"text/plain"});
 let link = document.createElement("a");
 link.href = URL.createObjectURL(file);
