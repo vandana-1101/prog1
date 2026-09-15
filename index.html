@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Text File</title></head>
+<body>
+<h2>Create TXT File</h2>
+<button onclick="download()">Download</button>
+<script>
+function download() {
+let text = "Hello!\nThis is my text file.\nWelcome to GitHub!";
+let file = new Blob([text], {type:"text/plain"});
+let link = document.createElement("a");
+link.href = URL.createObjectURL(file);
+link.download = "myfile.txt";
+link.click();
+}
+</script>
+</body>
+</html>
+
